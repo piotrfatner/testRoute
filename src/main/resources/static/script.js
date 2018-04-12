@@ -31,6 +31,10 @@ scotchApp.config(function($routeProvider) {
 scotchApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
+    $scope.clickContact = function () {
+        console.log("angular click!");
+        window.location.href = "#!/contact";
+    };
 });
 
 scotchApp.controller('aboutController', function($scope) {
